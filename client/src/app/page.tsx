@@ -1,25 +1,26 @@
 import React from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Themeswitcher from "@/components/ThemeSwitcher";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col ">
-      <Card>
-        <CardHeader>
-          <h1>Welcome to our Landing Page</h1>
-        </CardHeader>
-        <CardBody>
-          <p>
-            This is a sample landing page. 
-          </p>
-          <Image
-            src="/path/to/your/image.jpg"
-            alt="Landing Page Image"
-            width={500}
-            height={300}
-          />
-        </CardBody>
-      </Card>
-    </main>
+    <MaxWidthWrapper>
+      <Themeswitcher>
+      <div className="mx-auto flex flex-col text-center items-center py-20 max-w-3xl">
+        <h1 className="text-4xl font-semibold tracking-tight text-gray-600 text-pretty sm:text-5xl">
+        Where Learning Takes Flight : Welcome to{' '}
+          <span className="text-cyan-600">
+          SwanLake
+          </span>
+        </h1>
+        <p className="mt-6 text-lg max-w-prose text-default-400">
+        Where AI guides your learning journey, fostering deep understanding through 
+        interactive experiences. Dive in, connect, and discover the true potential within. ✨
+        </p>
+      </div>
+      </Themeswitcher>
+    </MaxWidthWrapper>
   );
 }

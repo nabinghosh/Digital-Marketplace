@@ -16,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="h-full">
+      <body className={['relative h-full', inter.className].join(' ')}>
         <Providers>
-          {children}
+          <main className="relative flex flex-col min-h-screen">
+            <div className="flex-grow flex-1 overflow-hidden">
+              {children}
+            </div>
+          </main>
         </Providers>
-
-
       </body>
     </html>
   );
