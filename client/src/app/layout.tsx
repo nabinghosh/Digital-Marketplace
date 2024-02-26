@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Providers from "./providers";
+import Providers from "../components/providers";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Digital Market",
-  description: "Developed by Nabin",
+  title: "Swan Lake",
+  description: "A Digital Market Developed by Nabin",
 };
 
 export default function RootLayout({
