@@ -3,8 +3,15 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Themeswitcher from "@/components/ThemeSwitcher";
 import Link from "next/link";
+import { redirect } from 'next/navigation'
 
 export default function Home() {
+
+  const accessDenied = true
+  if (accessDenied) {
+    redirect('/login')
+  }
+
   return (
     <MaxWidthWrapper>
       <Themeswitcher>
