@@ -16,7 +16,7 @@ import { useFormState, useFormStatus } from 'react-dom'
 //     )
 // }
 
-function LoginButton() {
+export default function LoginButton() {
     const { pending } = useFormStatus()
 
     return (

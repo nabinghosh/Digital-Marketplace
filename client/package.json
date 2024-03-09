@@ -13,7 +13,7 @@
     "clsx": "^2.1.0",
     "eslint-plugin-react-hooks": "^5.0.0-canary-47beb96cc-20240222",
     "framer-motion": "^10.18.0",
-    "next": "14.1.0",
+    "next": "^14.1.3",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18"
